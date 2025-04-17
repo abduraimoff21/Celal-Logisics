@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [language, setLanguage] = useState("tr"); // Default language is English
