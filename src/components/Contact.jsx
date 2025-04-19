@@ -171,7 +171,7 @@ const Contact = ({ language }) => {
           <div>
             <h3 className="text-xl font-bold mb-4">{t.location}</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d144.9630579153169!3d-37.81410797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d8c3e5e5e5e5!2sMelbourne%20CBD!5e0!3m2!1sen!2sau!4v1611810191234!5m2!1sen!2sau"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.58909115296!2d29.265505399999995!3d40.880891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadb633d1f8fb3%3A0x1175cb620e4967e9!2sDamla%20K%C4%B1rtasiye!5e0!3m2!1sen!2str!4v1745074209943!5m2!1sen!2str"
               width="100%"
               height="496"
               style={{ border: 0 }}

@@ -11,7 +11,7 @@ import { useState } from "react";
 const Header = ({ onLanguageChange }) => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
-  const [language, setLanguage] = useState("en"); // Default language is English
+  const [language, setLanguage] = useState("tr"); // Default language is English
 
   const toggleNavigation = () => {
     if (openNavigation) {
