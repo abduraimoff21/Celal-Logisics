@@ -21,17 +21,24 @@ const Contact = ({ language }) => {
     setStatus({ message: t.sendingMessage, type: "info" });
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch("https://app.celallogistic.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setStatus({ message: t.messageSent, type: "success" });
+        setStatus({
+          message: t.messageSent,
+          type: "success",
+        });
         setFormData({ name: "", number: "", email: "", message: "" });
       } else {
-        setStatus({ message: t.messageFailed, type: "error" });
+        const result = await response.json();
+        setStatus({
+          message: result?.error || t.messageFailed,
+          type: "error",
+        });
       }
     } catch (error) {
       console.error("Error:", error);
