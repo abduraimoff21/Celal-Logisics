@@ -130,7 +130,7 @@ export const benefits = [
 export const aboutImages = [
   {
     src: "images/truck1.jpg",
-    alt: "truck",
+    alt: "Celal Logistic freight truck in Istanbul",
   },
   {
     src: "images/truck2.jpg",
