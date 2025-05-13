@@ -3,7 +3,7 @@ import Section from "./Section";
 import { BackgroundCircles, BottomLine } from "./design/Hero";
 import { useRef } from "react";
 import CompanyLogos from "./CompanyLogos";
-import { translations } from "../constants/turkish"; // Import translations
+import { translations } from "../constants/translation"; // Import translations
 
 const Hero = ({ language }) => {
   const parallaxRef = useRef(null);

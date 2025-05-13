@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import Section from "./Section";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
-import { translations } from "../constants/turkish"; // Import translations
+import { translations } from "../constants/translation"; // Import translations
 
 const Benefits = ({ language }) => {
   const t = translations[language];
@@ -27,8 +27,8 @@ const Benefits = ({ language }) => {
               key={item.id}
             >
               <div className="relative z-2 flex flex-col justify-center items-center min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h5 mb-5 text-center">{item.title[language]}</h5> {/* Use language-specific title */}
-                <p className="body-10 mb-6 text-n-3">{item.text[language]}</p> {/* Use language-specific text */}
+                <h5 className="h5 mb-5 text-center">{item.title[language]}</h5> {/* language-specific title */}
+                <p className="body-10 mb-6 text-n-3">{item.text[language]}</p> {/* language-specific text */}
                 <div className="flex items-center mt-auto"></div>
               </div>
 
@@ -44,7 +44,7 @@ const Benefits = ({ language }) => {
                       src={item.imageUrl}
                       width={380}
                       height={362}
-                      alt={item.title[language]} // Use language-specific alt text
+                      alt={item.title[language]} // language-specific alt text
                       className="w-full h-full object-cover"
                     />
                   )}

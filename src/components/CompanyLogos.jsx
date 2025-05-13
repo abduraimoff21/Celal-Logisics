@@ -1,5 +1,5 @@
 import { companyLogos } from "../constants";
-import { translations } from "../constants/turkish"; // Import translations
+import { translations } from "../constants/translation"; // Import translations
 
 const CompanyLogos = ({ className, language }) => {
   const t = translations[language]; // Get translations based on the selected language

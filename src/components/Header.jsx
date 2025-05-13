@@ -11,7 +11,8 @@ import { useState } from "react";
 const Header = ({ onLanguageChange }) => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
-  const [language, setLanguage] = useState("tr"); // Default language is English
+  const [language, setLanguage] = useState("tr"); // Default language is Turkish
+  // const [language, setLanguage]= useState("ru");
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -77,7 +78,7 @@ const Header = ({ onLanguageChange }) => {
         <div className="ml-auto flex gap-4">
           <button
             onClick={() => handleLanguageToggle("en")}
-            className={`px-4 py-2 rounded-full transition-all ${
+            className={`px-2 py-2 rounded-full transition-all ${
               language === "en"
               ? "bg-blue-500 text-white border-blue-500"
               : "bg-white text-gray-700 border-gray-300 hover:bg-blue-200"
@@ -87,13 +88,23 @@ const Header = ({ onLanguageChange }) => {
           </button>
           <button
             onClick={() => handleLanguageToggle("tr")}
-            className={`px-4 py-2 rounded-full transition-all ${
+            className={`px-2 py-2 rounded-full transition-all ${
               language === "tr"
               ? "bg-blue-500 text-white border-blue-500"
               : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
             }`}
           >
             Türkçe
+          </button>
+          <button
+            onClick={() => handleLanguageToggle("tr")}
+            className={`px-2 py-2 rounded-full transition-all ${
+              language === "ru"
+              ? "bg-blue-500 text-white border-blue-500"
+              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+            }`}
+          >
+            Русский
           </button>
         </div>
 

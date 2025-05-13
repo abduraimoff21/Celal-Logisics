@@ -4,7 +4,7 @@ import Section from "./Section";
 import Heading from "./Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
-import { translations } from "../constants/turkish";
+import { translations } from "../constants/translation";
 
 const Contact = ({ language }) => {
   const [formData, setFormData] = useState({ name: "", number: "", email: "", message: "" });

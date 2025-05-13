@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { aboutImages } from "../constants";
-import { translations } from "../constants/turkish";
+import { translations } from "../constants/translation";
 
 const AboutUs = ({ language }) => {
   const t = translations[language];
