@@ -74,37 +74,54 @@ const Header = ({ onLanguageChange }) => {
           <HamburgerMenu />
         </nav>
 
-        {/* Language Toggle Buttons */}
+        {/* Language Toggle Buttons with Flags */}
         <div className="ml-auto flex gap-4">
+          {/* Turkish */}
+          <button
+            onClick={() => handleLanguageToggle("tr")}
+            className={`w-7 h-7 rounded-full overflow-hidden transition-all ${
+            language === "tr"
+              ? "border-blue-500 ring-2 ring-blue-300"
+              : "border-gray-300 hover:ring-2 hover:ring-blue-200"
+            }`}
+            >
+            <img
+              src="/images/flags/tr.svg"
+              alt="Türkçe"
+              className="object-cover w-full h-full"
+            />
+          </button>
+
+          {/* Russian */}
+          <button
+            onClick={() => handleLanguageToggle("ru")}
+            className={`w-7 h-7 rounded-full overflow-hidden transition-all ${
+            language === "ru"
+              ? "border-blue-500 ring-2 ring-blue-300"
+              : "border-gray-300 hover:ring-2 hover:ring-blue-200"
+            }`}
+          > 
+          <img
+            src="/images/flags/ru.svg"
+            alt="Русский"
+            className="object-cover w-full h-full"
+          />
+          </button>
+
+          {/* English */}
           <button
             onClick={() => handleLanguageToggle("en")}
-            className={`px-2 py-2 rounded-full transition-all ${
-              language === "en"
-              ? "bg-blue-500 text-white border-blue-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-blue-200"
+            className={`w-7 h-7 rounded-full overflow-hidden transition-all ${
+            language === "en"
+              ? "border-blue-500 ring-2 ring-blue-300"
+              : "border-gray-300 hover:ring-2 hover:ring-blue-200"
             }`}
           >
-            English
-          </button>
-          <button
-            onClick={() => handleLanguageToggle("tr")}
-            className={`px-2 py-2 rounded-full transition-all ${
-              language === "tr"
-              ? "bg-blue-500 text-white border-blue-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
-            }`}
-          >
-            Türkçe
-          </button>
-          <button
-            onClick={() => handleLanguageToggle("tr")}
-            className={`px-2 py-2 rounded-full transition-all ${
-              language === "ru"
-              ? "bg-blue-500 text-white border-blue-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
-            }`}
-          >
-            Русский
+          <img
+            src="/images/flags/en.svg"
+            alt="Русский"
+            className="object-cover w-full h-full"
+          />
           </button>
         </div>
 
